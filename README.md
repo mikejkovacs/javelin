@@ -29,7 +29,7 @@ Under the hood, Claude (via the [Vercel AI SDK](https://ai-sdk.dev)) picks from 
 | Path | What's there |
 |---|---|
 | [`javelin/`](javelin/) | Stripe App frontend: manifest (`stripe-app.json`), React views, streaming client |
-| [`javelin-backend/app/api/`](javelin-backend/app/api/) | API routes: `ask` (streaming Q&A), `threads/{list,get,delete}`, `health/db` |
+| [`javelin-backend/app/api/`](javelin-backend/app/api/) | API routes: `ask` (streaming Q&A), `threads/{list,get,delete}` |
 | [`javelin-backend/lib/ask/`](javelin-backend/lib/ask/) | System prompt, few-shot examples, Stripe fetchers, and the 30 tools (`tools/`) |
 | [`javelin-backend/lib/metrics/`](javelin-backend/lib/metrics/) | Pure metric computations (MRR, churn, LTV, …) with unit tests |
 | [`javelin-backend/lib/profile/`](javelin-backend/lib/profile/) | Per-merchant business profile (catalog, currency) cached in the Stripe Secret Store |
@@ -94,6 +94,8 @@ cd javelin-backend && npm run evals
 ```
 
 ## Status
+
+**This project is provided as-is, without support.** You're welcome to read it, fork it, and run your own copy, but issues and pull requests may not get a response.
 
 Javelin is an early-stage project, built and tested against a small number of real merchant accounts. Known limitations:
 
