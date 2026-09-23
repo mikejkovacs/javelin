@@ -1,0 +1,108 @@
+{
+  "$schema": "https://stripe.com/stripe-app.schema.json",
+  "id": "com.withairsync.javelin",
+  "name": "Javelin",
+  "version": "0.0.80",
+  "icon": "icon.png",
+  "ui_extension": {
+    "views": [
+      {
+        "viewport": "stripe.dashboard.drawer.default",
+        "component": "App"
+      }
+    ],
+    "content_security_policy": {
+      "connect-src": [
+        "https://javelin-backend.vercel.app/api/ask",
+        "https://javelin-backend.vercel.app/api/threads/list",
+        "https://javelin-backend.vercel.app/api/threads/get",
+        "https://javelin-backend.vercel.app/api/threads/delete"
+      ],
+      "purpose": ""
+    }
+  },
+  "extensions": null,
+  "permissions": [
+    {
+      "permission": "customer_read",
+      "purpose": "Read customer data for churn analysis"
+    },
+    {
+      "permission": "invoice_read",
+      "purpose": "Read invoices for revenue and churn calculations"
+    },
+    {
+      "permission": "product_read",
+      "purpose": "Read product names for revenue-by-product breakdown"
+    },
+    {
+      "permission": "subscription_read",
+      "purpose": "Read subscriptions for MRR, forecast, and churn calculations"
+    },
+    {
+      "permission": "charge_read",
+      "purpose": "Read charges for collected revenue, gross volume, and refund questions"
+    },
+    {
+      "permission": "payment_intent_read",
+      "purpose": "Read payment intents for one-time payment and Checkout revenue questions"
+    },
+    {
+      "permission": "balance_read",
+      "purpose": "Read current balance and balance transactions for net-revenue-after-fees questions"
+    },
+    {
+      "permission": "payout_read",
+      "purpose": "Read payouts for bank-transfer timing and payout history questions"
+    },
+    {
+      "permission": "connected_account_read",
+      "purpose": "Read connected accounts for Connect platform-performance questions"
+    },
+    {
+      "permission": "application_fee_read",
+      "purpose": "Read application fees for platform fee revenue questions"
+    },
+    {
+      "permission": "transfer_read",
+      "purpose": "Read transfers for money movement to connected accounts"
+    },
+    {
+      "permission": "dispute_read",
+      "purpose": "Read disputes for chargeback and fraud loss questions"
+    },
+    {
+      "permission": "review_read",
+      "purpose": "Read Radar reviews for fraud review queue questions"
+    },
+    {
+      "permission": "user_email_read",
+      "purpose": "Read the dashboard user email for future async-delivery features"
+    },
+    {
+      "permission": "usage_record_read",
+      "purpose": "Read usage records for metered-billing questions"
+    },
+    {
+      "permission": "billing_meter_event_read",
+      "purpose": "Read billing meter events for usage-based billing questions"
+    },
+    {
+      "permission": "payment_method_read",
+      "purpose": "Read payment methods for saved-card and payment-method questions"
+    },
+    {
+      "permission": "coupon_read",
+      "purpose": "Read coupons for discount catalog questions"
+    },
+    {
+      "permission": "promotion_code_read",
+      "purpose": "Read promotion codes for active-code and redemption questions"
+    },
+    {
+      "permission": "secret_write",
+      "purpose": "Store and retrieve Javelin's per-merchant business profile cache so grounding context persists across sessions"
+    }
+  ],
+  "distribution_type": "public"
+}

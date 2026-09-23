@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets
+.env
+.env.local
+.env*.local
+
+# Vercel / Next.js
+.vercel/
+.next/
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test / coverage
+coverage/
+.vitest/
+
+# Claude Code local config (per-machine)
+.claude/*.local.*
+.claude/*.lock
+
+# Reference material — kept on disk, not in repo
+/Stripe CLI/

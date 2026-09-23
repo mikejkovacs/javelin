@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "providers": {
+    "neon": {
+      "name": "Neon"
+    },
+    "vercel": {
+      "name": "Vercel"
+    }
+  },
+  "resources": {
+    "javelin-threads": {
+      "name": "javelin-threads",
+      "providerName": "Neon",
+      "serviceId": "postgres"
+    },
+    "neon-plan": {
+      "name": "neon-plan",
+      "providerName": "Neon",
+      "serviceId": "free"
+    },
+    "vercel-project": {
+      "name": "vercel-project",
+      "providerName": "Vercel",
+      "serviceId": "project"
+    }
+  }
+}

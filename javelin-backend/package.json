@@ -1,0 +1,31 @@
+{
+  "name": "javelin-backend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "evals": "RUN_LIVE_EVALS=1 vitest run evals/runner.test.ts --reporter=verbose"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.68",
+    "@neondatabase/serverless": "^1.1.0",
+    "ai": "^6.0.157",
+    "next": "16.2.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "stripe": "^20.3.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitest/ui": "^4.1.5",
+    "typescript": "^5",
+    "vitest": "^4.1.5"
+  }
+}
